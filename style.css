@@ -1,0 +1,306 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #1a5276;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+h2 {
+    border-bottom: 2px solid #2874a6;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-group label {
+    min-width: 250px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.signature-container {
+    margin: 20px 0;
+}
+
+.signature-box {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    cursor: crosshair;
+}
+
+.clear-signature {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.generate-pdf {
+    background-color: #2e86c1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.generate-pdf:hover {
+    background-color: #2874a6;
+}
+
+.hidden {
+    display: none;
+}
+
+.add-dependent {
+    background-color: #28b463;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-dependent:hover {
+    background-color: #239b56;
+}
+
+.add-travel-entry {
+    background-color: #28b463;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-travel-entry:hover {
+    background-color: #239b56;
+}
+
+.add-travel-issue-entry {
+    background-color: #28b463;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-travel-issue-entry:hover {
+    background-color: #239b56;
+}
+
+.documents-list {
+    background-color: #f2f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.documents-list h3 {
+    margin-top: 0;
+    color: #2874a6;
+}
+
+.fee-info {
+    background-color: #eaf2f8;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.fee-info h3 {
+    margin-top: 0;
+    color: #2874a6;
+}
+
+.required-documents {
+    margin-top: 30px;
+}
+
+/* Sortable styles */
+.sortable-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sortable-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.sortable-item:hover {
+    background-color: #eee;
+}
+
+.sortable-item.active-doc {
+    background-color: #eaf2f8; /* Highlight color */
+    border-color: #2e86c1;
+    font-weight: bold;
+}
+
+/* Document Details Display styles */
+.doc-details-display {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #2e86c1;
+    border-radius: 5px;
+    background-color: #f9fcfd;
+}
+
+.doc-details-display h3 {
+    color: #1a5276;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.doc-details-display .purpose {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.doc-details-display ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.doc-details-display ul li {
+    margin-bottom: 5px;
+}
+
+.conditional-field {
+    display: none;
+    margin-left: 20px;
+    border-left: 3px solid #2874a6;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media print {
+    .form-container {
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .add-dependent, 
+    .clear-signature, 
+    .generate-pdf,
+    .add-travel-entry,
+    .add-travel-issue-entry {
+        display: none !important;
+    }
+    
+    .signature-box canvas {
+        border: 0;
+        background: transparent;
+    }
+}

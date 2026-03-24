@@ -1,0 +1,490 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Visa Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* REMOVED DUPLICATE STYLES - Now using external style.css */
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>UK Visa Application Form</h1>
+        <div class="subtitle">(Generic Format)</div>
+
+        <div class="section">
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="givenNames">Given Name(s):</label>
+                <input type="text" id="givenNames" name="givenNames">
+            </div>
+            <div class="form-group">
+                <label for="familyName">Family Name:</label>
+                <input type="text" id="familyName" name="familyName">
+            </div>
+            <div class="form-group">
+                <label>Have you ever been known by any other name?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherNameYes" name="otherName" value="Yes">
+                    <label for="otherNameYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherNameNo" name="otherName" value="No">
+                    <label for="otherNameNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="previousNamesField">
+                <div class="form-group">
+                    <label for="previousNames">Previous Name(s):</label>
+                    <input type="text" id="previousNames" name="previousNames">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="relationshipStatus">Relationship Status:</label>
+                <input type="text" id="relationshipStatus" name="relationshipStatus">
+            </div>
+            <div class="form-group">
+                <label>Do you currently hold, or have you ever held, any other nationality or citizenship?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherNationalityYes" name="otherNationality" value="Yes">
+                    <label for="otherNationalityYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherNationalityNo" name="otherNationality" value="No">
+                    <label for="otherNationalityNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="otherNationalityField">
+                <div class="form-group">
+                    <label for="otherNationalityDetails">Other Nationality or Citizenship Held:</label>
+                    <input type="text" id="otherNationalityDetails" name="otherNationalityDetails">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="institution">University / Institution:</label>
+                <input type="text" id="institution" name="institution" placeholder="Enter your university or institution name">
+            </div>
+            <div class="form-group">
+                <label for="currentAddress">Current Address:</label>
+                <input type="text" id="currentAddress" name="currentAddress">
+            </div>
+            <div class="form-group">
+                <label>Is this address your correspondence address?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="correspondenceYes" name="correspondence" value="Yes">
+                    <label for="correspondenceYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="correspondenceNo" name="correspondence" value="No">
+                    <label for="correspondenceNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="correspondenceAddressField">
+                <div class="form-group">
+                    <label for="correspondenceAddress">Correspondence Address:</label>
+                    <input type="text" id="correspondenceAddress" name="correspondenceAddress">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="addressDuration">How long have you lived at this address?</label>
+                <input type="text" id="addressDuration" name="addressDuration">
+            </div>
+            <div class="form-group">
+                <label>Home Ownership Status:</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="owned" name="ownership" value="Owned">
+                    <label for="owned">Owned</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="rented" name="ownership" value="Rented">
+                    <label for="rented">Rented</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherOwnership" name="ownership" value="Other">
+                    <label for="otherOwnership">Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Do you have a UK driving license?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="licenseYes" name="license" value="Yes">
+                    <label for="licenseYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="licenseNo" name="license" value="No">
+                    <label for="licenseNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="licenseNumberField">
+                <div class="form-group">
+                    <label for="licenseNumber">UK Driving License Number:</label>
+                    <input type="text" id="licenseNumber" name="licenseNumber">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Telephone Number:</label>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Spouse/Partner Details</h2>
+            <div class="form-group">
+                <label for="spouseRelationship">Relationship to You:</label>
+                <input type="text" id="spouseRelationship" name="spouseRelationship">
+            </div>
+            <div class="form-group">
+                <label for="spouseGivenNames">Spouse/Partner's Given Name(s):</label>
+                <input type="text" id="spouseGivenNames" name="spouseGivenNames">
+            </div>
+            <div class="form-group">
+                <label for="spouseFamilyName">Spouse/Partner's Family Name:</label>
+                <input type="text" id="spouseFamilyName" name="spouseFamilyName">
+            </div>
+            <div class="form-group">
+                <label for="spouseDob">Spouse/Partner's Date of Birth:</label>
+                <input type="date" id="spouseDob" name="spouseDob">
+            </div>
+            <div class="form-group">
+                <label>Does your spouse/partner currently live with you?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="spouseLiveYes" name="spouseLive" value="Yes">
+                    <label for="spouseLiveYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="spouseLiveNo" name="spouseLive" value="No">
+                    <label for="spouseLiveNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Is your spouse/partner traveling with you to the UK?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="spouseTravelYes" name="spouseTravel" value="Yes">
+                    <label for="spouseTravelYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="spouseTravelNo" name="spouseTravel" value="No">
+                    <label for="spouseTravelNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="spousePassportField">
+                <div class="form-group">
+                    <label for="spousePassport">Spouse/Partner's Passport Number:</label>
+                    <input type="text" id="spousePassport" name="spousePassport">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Parent Details</h2>
+            <h3>Mother</h3>
+            <div class="form-group">
+                <label for="motherGivenNames">Given Name(s):</label>
+                <input type="text" id="motherGivenNames" name="motherGivenNames">
+            </div>
+            <div class="form-group">
+                <label for="motherFamilyName">Family Name:</label>
+                <input type="text" id="motherFamilyName" name="motherFamilyName">
+            </div>
+            <div class="form-group">
+                <label for="motherDob">Date of Birth:</label>
+                <input type="date" id="motherDob" name="motherDob">
+            </div>
+            <div class="form-group">
+                <label for="motherNationality">Country of Nationality:</label>
+                <input type="text" id="motherNationality" name="motherNationality">
+            </div>
+            <div class="form-group">
+                <label>Have they always had the same nationality?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="motherNationalityYes" name="motherNationalitySame" value="Yes">
+                    <label for="motherNationalityYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="motherNationalityNo" name="motherNationalitySame" value="No">
+                    <label for="motherNationalityNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="motherPreviousNationalityField">
+                <div class="form-group">
+                    <label for="motherPreviousNationality">Previous Nationality:</label>
+                    <input type="text" id="motherPreviousNationality" name="motherPreviousNationality">
+                </div>
+            </div>
+
+            <h3>Father</h3>
+            <div class="form-group">
+                <label for="fatherGivenNames">Given Name(s):</label>
+                <input type="text" id="fatherGivenNames" name="fatherGivenNames">
+            </div>
+            <div class="form-group">
+                <label for="fatherFamilyName">Family Name:</label>
+                <input type="text" id="fatherFamilyName" name="fatherFamilyName">
+            </div>
+            <div class="form-group">
+                <label for="fatherDob">Date of Birth:</label>
+                <input type="date" id="fatherDob" name="fatherDob">
+            </div>
+            <div class="form-group">
+                <label for="fatherNationality">Country of Nationality:</label>
+                <input type="text" id="fatherNationality" name="fatherNationality">
+            </div>
+            <div class="form-group">
+                <label>Have they always had the same nationality?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="fatherNationalityYes" name="fatherNationalitySame" value="Yes">
+                    <label for="fatherNationalityYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="fatherNationalityNo" name="fatherNationalitySame" value="No">
+                    <label for="fatherNationalityNo">No</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="fatherPreviousNationalityField">
+                <div class="form-group">
+                    <label for="fatherPreviousNationality">Previous Nationality:</label>
+                    <input type="text" id="fatherPreviousNationality" name="fatherPreviousNationality">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Dependent(s) Details</h2>
+            <div class="form-group">
+                <label>Do you have any dependents?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="dependentsYes" name="dependents" value="Yes"
+                        onclick="toggleDependents(true)">
+                    <label for="dependentsYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="dependentsNo" name="dependents" value="No"
+                        onclick="toggleDependents(false)">
+                    <label for="dependentsNo">No</label>
+                </div>
+            </div>
+
+            <div id="dependentsSection" class="hidden">
+                <!-- Dependent forms will be inserted here via JS -->
+                <button type="button" class="add-dependent" onclick="addDependent()">Add Another Dependent</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Additional Family Details</h2>
+            <div class="form-group">
+                <label>Do you have any family in the UK?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="ukFamilyYes" name="ukFamily" value="Yes">
+                    <label for="ukFamilyYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="ukFamilyNo" name="ukFamily" value="No">
+                    <label for="ukFamilyNo">No</label>
+                </div>
+            </div>
+
+            <div class="conditional-field" id="ukFamilyDetailsField">
+                <h3>Family Member in the UK</h3>
+                <div class="form-group">
+                    <label for="ukFamilyFullName">Full name of the family member:</label>
+                    <input type="text" id="ukFamilyFullName" name="ukFamilyFullName">
+                </div>
+                <div class="form-group">
+                    <label for="ukFamilyRelationship">Relationship to the student:</label>
+                    <input type="text" id="ukFamilyRelationship" name="ukFamilyRelationship">
+                </div>
+                <div class="form-group">
+                    <label for="ukFamilyVisaType">Type of visa the person holds in the UK:</label>
+                    <input type="text" id="ukFamilyVisaType" name="ukFamilyVisaType">
+                </div>
+                <div class="form-group">
+                    <label for="ukFamilyAddress">Full address of the person in the UK:</label>
+                    <input type="text" id="ukFamilyAddress" name="ukFamilyAddress">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Travel History</h2>
+            <div class="form-group">
+                <label>Have you applied for leave to remain in the UK in the past 10 years?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="leaveRemainYes" name="leaveRemain" value="Yes">
+                    <label for="leaveRemainYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="leaveRemainNo" name="leaveRemain" value="No">
+                    <label for="leaveRemainNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Have you been to the UK in the past 10 years?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="ukVisitYes" name="ukVisit" value="Yes">
+                    <label for="ukVisitYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="ukVisitNo" name="ukVisit" value="No">
+                    <label for="ukVisitNo">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ukVisitCount">How many times have you been to the UK in the past 10 years?</label>
+                <input type="number" id="ukVisitCount" name="ukVisitCount" min="0">
+            </div>
+            <div class="form-group">
+                <label>For any country, have you ever been:</label>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="refusedVisa" name="travelIssues">
+                    <label for="refusedVisa">Refused a visa?</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="refusedEntry" name="travelIssues">
+                    <label for="refusedEntry">Refused entry at the border?</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="refusedPermission" name="travelIssues">
+                    <label for="refusedPermission">Refused permission to stay or remain?</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="refusedAsylum" name="travelIssues">
+                    <label for="refusedAsylum">Refused asylum?</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="deported" name="travelIssues">
+                    <label for="deported">Deported/Removed?</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="requiredLeave" name="travelIssues">
+                    <label for="requiredLeave">Required to leave?</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="excluded" name="travelIssues">
+                    <label for="excluded">Excluded or banned from entry?</label>
+                </div>
+            </div>
+            <div class="conditional-field" id="travelIssueDetailsField">
+                <!-- Dynamic travel issue entry forms will be inserted here via JS -->
+                <button type="button" class="add-travel-issue-entry" onclick="addTravelIssueEntry()">Add Another Travel Issue Entry</button>
+            </div>
+            <div class="form-group">
+                <label>Have you traveled to any other countries in the past?</label>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherTravelYes" name="otherTravel" value="Yes" onclick="toggleOtherTravelDetails(true)">
+                    <label for="otherTravelYes">Yes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="radio" id="otherTravelNo" name="otherTravel" value="No" onclick="toggleOtherTravelDetails(false)">
+                    <label for="otherTravelNo">No</label>
+                </div>
+            </div>
+
+            <div class="conditional-field" id="otherTravelDetailsField">
+                <!-- Dynamic travel entry forms will be inserted here via JS -->
+                <button type="button" class="add-travel-entry" onclick="addTravelEntry()">Add Another Travel Entry</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Personal Statement</h2>
+            <p>(Please use the following structured format to detail your academic and professional experience. Add
+                additional entries if you have more experience.)</p>
+            <div class="form-group">
+                <label for="personalStatement" class="visually-hidden">Personal Statement:</label>
+                <textarea id="personalStatement" name="personalStatement">I obtained my BSc degree in [Field of Study] from [University Name] in [Month and Year of Graduation].
+
+Following my graduation, I gained practical experience as [Position Name] at [Company Name] from [Starting Month and Year] to [Ending Month and Year].
+
+I currently hold the position of [Current Position Name] at [Current Company Name], where I have been employed since [Starting Month and Year].</textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Declaration</h2>
+            <p>I confirm that the details provided are correct, and I take full responsibility for the accuracy of this
+                information.</p>
+         <p><strong>Note:</strong> As a student, you must carefully review your visa application after entering all the information and <strong>before paying your IHS and visa fees</strong>. You are <strong>100% responsible</strong> for ensuring that all the information provided in the application is correct and accurate.</p>
+            <div class="signature-container">
+                <label>Sign:</label>
+                <canvas id="signatureBox" class="signature-box"></canvas>
+                <button type="button" class="clear-signature" onclick="clearSignature()">Clear Signature</button>
+            </div>
+            <div class="form-group">
+                <label for="signatureDate">Date:</label>
+                <input type="date" id="signatureDate" name="signatureDate">
+            </div>
+            <div class="form-group">
+                <label for="declarationName">Name:</label>
+                <input type="text" id="declarationName" name="declarationName">
+            </div>
+        </div>
+
+        <div class="required-documents">
+            <h2>Other Details to Know</h2>
+            <div class="documents-list">
+                <h3>Documents to Upload:</h3>
+                <ul class="sortable-list">
+                    <li class="sortable-item" draggable="true" data-doc-key="Account Statement">Account Statement</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="International Passport Data Page">International Passport Data Page</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="TB Test Certificate">TB Test Certificate</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="Academic Documents (BSc Certificate, WAEC, and Transcript)">Academic Documents (BSc Certificate, WAEC, and Transcript)
+</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="Employment evidence as written on the additional information">Employment evidence as written on the additional information</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="CAS">CAS</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="Passport Photo">Passport Photo</li>
+                    <li class="sortable-item" draggable="true" data-doc-key="Evidence used to obtain CAS">Evidence used to obtain CAS
+                      
+                    <li>For applicants with children:
+                        <ul>
+                            <li class="sortable-item" draggable="true" data-doc-key="Birth Certificates">Birth Certificates</li>
+                            <li class="sortable-item" draggable="true" data-doc-key="Marriage Certificate">Marriage Certificate</li>
+                            <li class="sortable-item" draggable="true" data-doc-key="Family Photos">Family Photos</li>
+                            <li class="sortable-item" draggable="true" data-doc-key="Parental Consent / Authorization Letter (for children)">Parental Consent / Authorization Letter (for children)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="documentDetailsDisplay" class="doc-details-display hidden">
+                <!-- Document details will appear here -->
+            </div>
+
+            <div class="fee-info">
+               
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="button" class="generate-pdf" onclick="generatePDF()">Generate PDF</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "sortablejs": "https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/modular/sortable.esm.js",
+        "jspdf": "https://cdn.skypack.dev/jspdf@2.5.1"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="pdfGenerator.js"></script>
+</body>
+
+</html>

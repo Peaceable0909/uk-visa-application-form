@@ -1,0 +1,47 @@
+<template id="dependentTemplate">
+    <div class="dependent-form">
+        <h3>Dependent {n}</h3>
+        <div class="form-group">
+            <label for="dependent{n}Name">Full Name:</label>
+            <input type="text" id="dependent{n}Name" name="dependent{n}Name">
+        </div>
+        <div class="form-group">
+            <label for="dependent{n}Dob">Date of Birth:</label>
+            <input type="date" id="dependent{n}Dob" name="dependent{n}Dob">
+        </div>
+        <div class="form-group">
+            <label for="dependent{n}Relationship">Relationship to You:</label>
+            <input type="text" id="dependent{n}Relationship" name="dependent{n}Relationship">
+        </div>
+        <div class="form-group">
+            <label for="dependent{n}Passport">Passport Number:</label>
+            <input type="text" id="dependent{n}Passport" name="dependent{n}Passport">
+        </div>
+        <div class="form-group">
+            <label for="dependent{n}Nationality">Country of Nationality:</label>
+            <input type="text" id="dependent{n}Nationality" name="dependent{n}Nationality">
+        </div>
+        <div class="form-group">
+            <label>Is this person traveling with you to the UK?</label>
+            <div class="checkbox-group">
+                <input type="radio" id="dependent{n}TravelYes" name="dependent{n}Travel" value="Yes">
+                <label for="dependent{n}TravelYes">Yes</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" id="dependent{n}TravelNo" name="dependent{n}Travel" value="No">
+                <label for="dependent{n}TravelNo">No</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Does this person currently live with you?</label>
+            <div class="checkbox-group">
+                <input type="radio" id="dependent{n}LiveYes" name="dependent{n}Live" value="Yes">
+                <label for="dependent{n}LiveYes">Yes</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="radio" id="dependent{n}LiveNo" name="dependent{n}Live" value="No">
+                <label for="dependent{n}LiveNo">No</label>
+            </div>
+        </div>
+    </div>
+</template>
